@@ -1,0 +1,141 @@
+body {
+	background-image: url("Taustakuva.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-top: 1%;
+	margin-bottom: 5%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Adamina";
+}
+header {
+	text-align: center;
+	font-size: 150%;
+	background: rgba(223, 212, 255, 0.65);
+	padding: 1px;
+	text-shadow: 3px 3px rgb(222, 218, 255);
+	color: rgb(122, 111, 232);
+}
+nav {
+	display: flex;
+	justify-content: center;
+	background: rgb(223, 212, 255);
+	text-align: center;
+	border-top-style: groove;
+	border-top-width: 3px;
+	border-top-color: rgb(187, 175, 221);
+}
+.linkki {
+	padding: 5px;
+	width: 33.3%;
+}
+a:link {
+	text-decoration: none;
+	color: rgb(86, 70, 130);
+}
+a:visited{
+	color: rgb(54, 42, 86);
+}
+a:hover {
+	text-decoration: underline;
+}
+.otsikko {
+	text-align: center;
+	font-size: 150%;
+	text-shadow: 2px 2px rgb(222, 218, 255);
+	color: rgb(122, 111, 232);
+}
+section {
+	display: flex;
+	justify-content: flex-start;
+	background: rgba(223, 212, 255, 0.65);
+	padding: 1%;
+	color: rgb(95, 84, 200);
+	margin-top: 2%;
+}
+.teksi {
+	display: flex;
+	flex-direction: row;
+	word-wrap: break-word;
+}
+* {
+	box-sizing: border-box;
+}
+.ryhma {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.ryhma::after {
+	content: '';
+}
+.kuva {
+	width: 100%;
+	height: 100%;
+	-webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+	clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+.kuvat {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	-webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+	clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+	padding: 0.2%;
+	background: linear-gradient(grey, lightgrey);
+	max-height: 290px;
+	max-width: 17%;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.2s;
+	position: relative;
+	cursor: pointer;
+	margin: -2% -0.5%;
+}
+.kuvat:before {
+	content: '';
+	position: absolute;
+	opacity: 0.5;
+	width: 150%;
+	height: 30%;
+	background: white;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transform: rotate(45deg);
+	transition: transform 0.5s;
+}
+.kuvat:hover:before {
+	transform: translate(-100px, 400%) rotate(45deg);
+	transition: transform 0.5s;
+}
+.kuvat:hover {
+	transform: scale(1.2);
+	transition: transform 0.2s;
+	z-index: 10;
+}
+.galleria {
+	margin-top: 2%;
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	text-align: center;
+	background: rgba(223, 212, 255, 0.65);
+}
+.osa {
+	width: 16.6%;
+}
+img {
+	border-style: groove;
+	border-width: 3px;
+	border-color: rgb(187, 175, 221);
+}
