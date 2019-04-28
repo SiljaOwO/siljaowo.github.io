@@ -56,7 +56,7 @@ section {
 }
 .teksi {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	word-wrap: break-word;
 }
 * {
